@@ -35,11 +35,7 @@ class _AliceCallsListScreenState extends State<AliceCallsListScreen> {
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: ThemeData(
-        brightness: widget._aliceCore.brightness,
-        colorScheme: ColorScheme.fromSwatch()
-            .copyWith(secondary: AliceConstants.lightRed),
-      ),
+      data: AliceConstants.getThemeData(widget._aliceCore.brightness),
       child: Scaffold(
         appBar: AppBar(
           title: _searchEnabled ? _buildSearchField() : _buildTitleWidget(),

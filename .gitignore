@@ -9,3 +9,4 @@ build/
 .flutter-plugins-dependencies
 
 .flutter-plugins
+/.fvm/flutter_sdk/

@@ -12,11 +12,7 @@ class AliceStatsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: ThemeData(
-        brightness: aliceCore.brightness,
-        colorScheme: ColorScheme.fromSwatch()
-            .copyWith(secondary: AliceConstants.lightRed),
-      ),
+      data: AliceConstants.getThemeData(aliceCore.brightness),
       child: Scaffold(
         appBar: AppBar(
           title: Text("Alice - HTTP Inspector - Stats"),

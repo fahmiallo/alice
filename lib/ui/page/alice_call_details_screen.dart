@@ -31,11 +31,7 @@ class _AliceCallDetailsScreenState extends State<AliceCallDetailsScreen>
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: ThemeData(
-        brightness: widget.core.brightness,
-        colorScheme: ColorScheme.fromSwatch()
-            .copyWith(secondary: AliceConstants.lightRed),
-      ),
+      data: AliceConstants.getThemeData(widget.core.brightness),
       child: StreamBuilder<List<AliceHttpCall>>(
         stream: widget.core.callsSubject,
         initialData: [widget.call],
