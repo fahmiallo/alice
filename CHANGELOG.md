@@ -1,4 +1,10 @@
-## [3.3.0]
+## 3.4.0
+- Bump dependencies
+
+## 3.3.1
+- Fix material 3 background color
+
+## 3.3.0
 - Incremented the Flutter SDK version to 3.7.0
 
 ## 3.2.0
