@@ -1,3 +1,9 @@
+## [3.3.3]
+- Fix breaking changes in TextTheme
+
+## [3.3.2]
+- Upgrade dio to v5
+
 ## [3.3.0]
 - Incremented the Flutter SDK version to 3.7.0
 
